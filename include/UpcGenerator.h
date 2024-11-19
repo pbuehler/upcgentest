@@ -177,6 +177,7 @@ class UpcGenerator
 
  private:
   UpcCrossSection* nucProcessCS{nullptr};
+  void setLumiFileDirectory(std::string directory) { nucProcessCS->setLumiFileDirectory(directory); };
 
   std::string parFileName{"parameters.in"};
 
