@@ -76,14 +76,14 @@ if (BUILD_WITH_PYTHIA8)
 endif()
 
 # static and ...
-set(Upcgenlib "Upcgenlib")
+set(Upcgenlib "Upcgen")
 add_library(${Upcgenlib} STATIC ${sources})
 
 # ... shared library
-set(UpcgenlibShared "UpcgenlibShared")
+set(UpcgenlibShared "UpcgenShared")
 add_library(${UpcgenlibShared} SHARED ${sources})
 target_link_libraries(${UpcgenlibShared} ${optLibs} ${ROOT_LIBRARIES})
-set_target_properties(${UpcgenlibShared} PROPERTIES OUTPUT_NAME "Upcgenlib")
+set_target_properties(${UpcgenlibShared} PROPERTIES OUTPUT_NAME "Upcgen")
 
 # executable
 add_executable(upcgen main.cpp)
