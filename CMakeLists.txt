@@ -76,7 +76,7 @@ if (BUILD_WITH_PYTHIA8)
 endif()
 
 # static and ...
-set(Upcgenlib "Upcgen")
+set(Upcgenlib "Upcgenlib")
 add_library(${Upcgenlib} STATIC ${sources})
 
 # ... shared library
